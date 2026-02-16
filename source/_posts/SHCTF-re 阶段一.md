@@ -3,7 +3,6 @@ date: 2026-2-7
 tags:
 ---
 
-[SHCTFre阶段一.md](https://github.com/user-attachments/files/25330569/SHCTFre.md)
 ## SHCTF-a_cup_of_tea
 一道简单的tea算法题目，核心伪代码如下
 
