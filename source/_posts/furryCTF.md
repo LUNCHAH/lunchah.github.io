@@ -36,8 +36,7 @@ print(load(dec("G0x1YVQAGZMNChoKBAgIeFYAAAAAAAAAAAAAACh3QAGAoa4BAA6gkwAAAFIAAAAB
 
 最底下解base64可得
 
-<!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/62008266/1770036798119-3382e0ba-6a61-4b12-9261-af82748b1e47.png)
+![](/blog_essay_picture/furryCTF/1.png)
 
 Lua码就可以看到了，我们使用unluac可得以下代码
 
