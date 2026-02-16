@@ -43,7 +43,7 @@ avatar: "head.jpg" # which means source/_data/avatar/avatar.webp
 # Control the display of the post cover
 # If not set, the banner image will be displayed by default
 # Its priority is lower than the cover in the Front-matter
-cover: source/_data/cover-1.jpg
+cover: source/_data/covers/cover-1.jpg
 
 # Control the display of the post toc
 # Its priority is lower than the toc in the Front-matter
