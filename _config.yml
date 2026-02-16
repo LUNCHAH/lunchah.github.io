@@ -100,8 +100,10 @@ theme: reimu
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: ''
+deploy: 
+  type: git
+  repo: https://github.com/LUNCHAH/LUNCHAH.github.io.git
+  branch: gh-pages
 
 feed:
   enable: true
