@@ -1,5 +1,5 @@
 tltle: DES
-time: 2026-01-28
+date: 2026-01-28
 cover: https://s41.ax1x.com/2026/02/16/pZLboSf.jpg
 category: LEARN
 ---
