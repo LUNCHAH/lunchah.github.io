@@ -107,7 +107,7 @@ int main()
 
 **<font style="color:#DF2A3F;">TEA只能处理32位数据，所以在IDA中不要忘了shift+e</font>**
 
-## SHGAME-where are you
+## SHCTF-where are you
 一道很有意思的题目，藏了很多东西，也有很多假的东西和指引。
 
 首先查找字符串定位到main逻辑
@@ -226,7 +226,7 @@ print("flag:", plain.decode(errors="ignore"))
 
 ```
 
-## SHGAME-damagePE
+## SHCTF-damagePE
 题干如下
 
 <!-- 这是一张图片，ocr 内容为： -->
@@ -254,7 +254,7 @@ print("flag:", plain.decode(errors="ignore"))
 
 那答案就很明显了，两个都拿去试一下就能拿到flag了。
 
-## SHGAME-Safe Image Encryption
+## SHCTF-Safe Image Encryption
 一道图像加密逆向问题，原伪代码如下
 
 ```c
