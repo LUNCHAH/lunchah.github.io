@@ -113,29 +113,29 @@ int main()
 
 首先查找字符串定位到main逻辑
 
-![](/blog_essay_picture/SHCTF-re 阶段一/1.png)
+![](/blog_essay_picture/SHCTF-re阶段一/1.png)
 
 函数sub_401FE0中找到
 
-![](/blog_essay_picture/SHCTF-re 阶段一/2.png)
+![](/blog_essay_picture/SHCTF-re阶段一/2.png)
 
 逆向后得到假flag。
 
-![](/blog_essay_picture/SHCTF-re 阶段一/3.png)
+![](/blog_essay_picture/SHCTF-re阶段一/3.png)
 
 找到可疑数据byte_404090，x 定位，找到真正逻辑
 
-![](/blog_essay_picture/SHCTF-re 阶段一/4.png)
+![](/blog_essay_picture/SHCTF-re阶段一/4.png)
 
 这里需要下断点，在第二个virtualprotect处下断点
 
 动调前的ipaddress
 
-![](/blog_essay_picture/SHCTF-re 阶段一/5.png)
+![](/blog_essay_picture/SHCTF-re阶段一/5.png)
 
 动调后的ipaddress
 
-![](/blog_essay_picture/SHCTF-re 阶段一/6.png)
+![](/blog_essay_picture/SHCTF-re阶段一/6.png)
 
 很明显发生变化了。下面就是一点点脑洞了，类似于处理花指令，这里也是CUP处理，然后可以得到真实逻辑
 
@@ -224,23 +224,23 @@ print("flag:", plain.decode(errors="ignore"))
 ## SHCTF-damagePE
 题干如下
 
-![](/blog_essay_picture/SHCTF-re 阶段一/7.png)
+![](/blog_essay_picture/SHCTF-re阶段一/7.png)
 
 附件丢进010中之后如下
 
-![](/blog_essay_picture/SHCTF-re 阶段一/8.png)
+![](/blog_essay_picture/SHCTF-re阶段一/8.png)
 
 可以看到最大的问题在于PE被出题人改成了SH，改完后我们尝试运行并丢进IDA中
 
-![](/blog_essay_picture/SHCTF-re 阶段一/9.png)
+![](/blog_essay_picture/SHCTF-re阶段一/9.png)
 
 得到第一部分flag
 
-![](/blog_essay_picture/SHCTF-re 阶段一/10.png)
+![](/blog_essay_picture/SHCTF-re阶段一/10.png)
 
 得到第二部分flag和提示。提示说找到第二个IAT，我们该怎么找导入函数呢？IDA中有一个强大的功能叫Imports，这个视窗中可以找到所有的导入函数
 
-![](/blog_essay_picture/SHCTF-re 阶段一/11.png)
+![](/blog_essay_picture/SHCTF-re阶段一/11.png)
 
 那答案就很明显了，两个都拿去试一下就能拿到flag了。
 
