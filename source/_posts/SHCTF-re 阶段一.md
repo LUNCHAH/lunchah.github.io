@@ -113,34 +113,34 @@ int main()
 首先查找字符串定位到main逻辑
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/62008266/1770372238062-844d8e51-35fe-47d4-a0f3-c1e54766a5ee.png)
+![](source/blog_essay_picture/1.png)
 
 函数sub_401FE0中找到
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/62008266/1770372267547-584cecdc-358a-4f51-a481-9529589dff99.png)
+![](source/blog_essay_picture/2.png)
 
 逆向后得到假flag。
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/62008266/1770372329088-c534addc-ed13-483d-8eb7-e99f4a83b112.png)
+![](source/blog_essay_picture/3.png)
 
 找到可疑数据byte_404090，x 定位，找到真正逻辑
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/62008266/1770372392038-a5ba93a9-69d4-4247-9b84-8d36aeeff27b.png)
+![](source/blog_essay_picture/4.png)
 
 这里需要下断点，在第二个virtualprotect处下断点
 
 动调前的ipaddress
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/62008266/1770372492902-9c12d877-5fd5-4e72-8bb8-d86b6e2a33a3.png)
+![](source/blog_essay_picture/5.png)
 
 动调后的ipaddress
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/62008266/1770372523929-36c3f75b-4b0f-422d-8495-4c2299265e49.png)
+![](source/blog_essay_picture/6.png)
 
 很明显发生变化了。下面就是一点点脑洞了，类似于处理花指令，这里也是CUP处理，然后可以得到真实逻辑
 
@@ -230,27 +230,27 @@ print("flag:", plain.decode(errors="ignore"))
 题干如下
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/62008266/1770199148356-4372538c-a747-4ad9-a997-d6e0fbc8ae33.png)
+![](source/blog_essay_picture/7.png)
 
 附件丢进010中之后如下
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/62008266/1770199330707-8b1da7dd-8f4e-4777-b47b-60f0addb9696.png)
+![](source/blog_essay_picture/8.png)
 
 可以看到最大的问题在于PE被出题人改成了SH，改完后我们尝试运行并丢进IDA中
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/62008266/1770199423075-d5cb0016-dcd3-46bb-91a6-0ab4f3f15a01.png)
+![](source/blog_essay_picture/9.png)
 
 得到第一部分flag
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/62008266/1770199498337-9e048f25-acad-4207-af77-fc2d94621754.png)
+![](source/blog_essay_picture/10.png)
 
 得到第二部分flag和提示。提示说找到第二个IAT，我们该怎么找导入函数呢？IDA中有一个强大的功能叫Imports，这个视窗中可以找到所有的导入函数
 
 <!-- 这是一张图片，ocr 内容为： -->
-![](https://cdn.nlark.com/yuque/0/2026/png/62008266/1770199578417-5b6cf8d3-1ca0-42d5-bcd4-4ac2f19f29a4.png)
+![](source/blog_essay_picture/11.png)
 
 那答案就很明显了，两个都拿去试一下就能拿到flag了。
 
