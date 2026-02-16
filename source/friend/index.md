@@ -15,5 +15,5 @@ comments: true
 ```
 ~~~
 
-## 小伙伴们
+## 神们
 {% friendsLink friend/_data.yml %}
