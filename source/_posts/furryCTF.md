@@ -88,7 +88,7 @@ return L2_1()
 概括就是异或114。
 
 ## furryCTF-分组密码
-期待了很久的AES算法题，但是AES尚在学习中，所以有借助AI神力，我们来仔细看一下。
+期待了很久的AES算法题。
 
 进入main逻辑
 
@@ -721,7 +721,7 @@ int main() {
 噢噢对，值得注意的一点是，<font style="color:#DF2A3F;">这里的轮换函数与标准的AES也不同，所以在逆向的时候需要按着IDA里面的逻辑来，以及异或的位置不要放错了</font>
 
 ## furryCTF-TimeManager
-一道蛮有意思的题目，不算特别难(当时为什么没去做呢)，main逻辑如下
+一道蛮有意思的题目，不算特别难，main逻辑如下
 
 ```c
 int __fastcall main(int argc, const char **argv, const char **envp)
