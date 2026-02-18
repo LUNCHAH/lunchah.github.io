@@ -409,7 +409,7 @@ uint32_t f_function(uint32_t right,uint64_t subkey)
 
 轮函数的主要作用在于将 6 位数据通过S盒的替换，变成 4 位数据(上文S盒处有讲)。
 
-**====================================================**
+
 
 **接下来将分别展示ECB，CBC，CTR的完整代码，梳理其执行流并比较其不同。**
 
@@ -1455,5 +1455,6 @@ int main()
 | **<font style="color:rgb(15, 17, 21);">常见应用</font>** | <font style="color:rgb(15, 17, 21);">早期系统</font><font style="color:rgb(15, 17, 21);">   </font><font style="color:rgb(15, 17, 21);">简单协议</font> | <font style="color:rgb(15, 17, 21);">SSL/TLS（早期）</font><font style="color:rgb(15, 17, 21);">   </font><font style="color:rgb(15, 17, 21);">IPSec</font><font style="color:rgb(15, 17, 21);">   </font><font style="color:rgb(15, 17, 21);">文件加密</font> | <font style="color:rgb(15, 17, 21);">WiFi WPA2</font><font style="color:rgb(15, 17, 21);">   </font><font style="color:rgb(15, 17, 21);">磁盘加密</font><font style="color:rgb(15, 17, 21);">   </font><font style="color:rgb(15, 17, 21);">实时通信</font> |
 | **<font style="color:rgb(15, 17, 21);">优缺点总结</font>** | **<font style="color:rgb(15, 17, 21);">优点</font>**<font style="color:rgb(15, 17, 21);">：简单、并行</font><font style="color:rgb(15, 17, 21);">   </font>**<font style="color:rgb(15, 17, 21);">缺点</font>**<font style="color:rgb(15, 17, 21);">：模式暴露、不安全</font> | **<font style="color:rgb(15, 17, 21);">优点</font>**<font style="color:rgb(15, 17, 21);">：隐藏模式、较安全</font><font style="color:rgb(15, 17, 21);">   </font>**<font style="color:rgb(15, 17, 21);">缺点</font>**<font style="color:rgb(15, 17, 21);">：串行、错误传播</font> | **<font style="color:rgb(15, 17, 21);">优点</font>**<font style="color:rgb(15, 17, 21);">：并行、无需填充</font><font style="color:rgb(15, 17, 21);">   </font>**<font style="color:rgb(15, 17, 21);">缺点</font>**<font style="color:rgb(15, 17, 21);">：需唯一nonce</font> |
 | **<font style="color:rgb(15, 17, 21);">推荐程度</font>** | <font style="color:rgb(15, 17, 21);">❌</font><font style="color:rgb(15, 17, 21);"> 不推荐（已淘汰）</font> | <font style="color:rgb(15, 17, 21);">⚠️</font><font style="color:rgb(15, 17, 21);"> 谨慎使用（逐渐淘汰）</font> | <font style="color:rgb(15, 17, 21);">✅</font><font style="color:rgb(15, 17, 21);"> 推荐使用（现代应用）</font> |
-
+## <font style="color:rgb(15, 17, 21);">DES解密</font>
+DES的解密相比于AES来说更为简单，其表，盒，函数和执行流基本上都是不变的，唯一变的东西是密钥的输入方式，即加密时子密钥从索引第0个开始调度使用，解密时则刚好相反，从索引第15个开始调度使用。其他的流程全部与加密相同。
 
