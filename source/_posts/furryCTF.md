@@ -494,7 +494,7 @@ int __fastcall sub_4010B0(char *a1, int a2)
     v18 = v9;
 ```
 
-与普通的AES轮换不同，这里疑惑了一个常数0x66。函数sub_401050为
+与普通的AES轮换不同，这里异或了一个常数0x66。函数sub_401050为
 
 ```c
 char *__thiscall sub_401050(char *this)
