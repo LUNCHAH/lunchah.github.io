@@ -1,3 +1,9 @@
+title: AES
+date: 2026-02-26
+category: LEARN
+cover: https://s41.ax1x.com/2026/02/26/pZxRaaq.png
+---
+
 ## 前言
 相比于DES算法，AES算法更为复杂，逆向的难度也相对较大，广义上来说AES可以算是DES的升级版。
 
