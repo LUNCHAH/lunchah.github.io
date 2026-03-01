@@ -1,7 +1,7 @@
 title: AES
 date: 2026-02-26
 category: LEARN
-cover: https://s41.ax1x.com/2026/02/26/pZxRaaq.png
+cover: https://s41.ax1x.com/2026/03/01/peS4xNd.jpg
 ---
 
 ## 前言
